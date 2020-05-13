@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node ./src/index.js"
+    "build": "node ./src/index.js",
+    "start": "live-server ./public"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +13,7 @@
   "dependencies": {
     "front-matter": "^3.2.0",
     "highlight.js": "^10.0.3",
+    "live-server": "^1.2.1",
     "marked": "^1.0.0"
   }
 }
