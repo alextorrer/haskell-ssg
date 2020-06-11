@@ -12,30 +12,37 @@ const homepage = (posts) => `
         <title>${config.blogName}</title>
     </head>
     <body>
-        <div class="grotesk">
-
-            <header>
-                <h1>${config.blogName}</h1>
-                <p>-</p>
-                <p>This blog is written by ${config.authorName}</p>
-                <hr/>
-            </header>
-        
-            <div class="posts">
-                ${posts.map((post) => `
-                    <div class="post">
-                        <h3><a href="./${post.path}" >${post.attributes.title}</a></h3>
-                        <p>${post.attributes.description}</p>
-                    </div>
-                `).join("")}
+        <section class="home-main-container">
+            <div class="home-logo-container">
+                <img src="" alt="haskell logo">
             </div>
+            <h1>${config.blogName}</h1>
+        </section>
 
-            <footer>
-                <p>Find the code on <a href="https://github.com/alextorrer/haskell-ssg"> github</a></p>
-            </footer>
-        </div>
+        <section class="posts-main-container">
+            <div>
+                ${posts.map((post) => `
+                    <article class="post">
+                        <h3>${post.attributes.title}</h3>
+                        <p>${post.attributes.description}</p>
+                        <div class="post-link-container">
+                            <a href="./${post.path}"><img src="" alt="arrow icon"></a>
+                        </div>
+                    </article>
+                `).join("")} 
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-logo-container">
+                <img src="" alt="">
+                <a href="https://github.com/alextorrer/haskell-ssg">Github Repository</a>
+            </div>
+        </footer>
+
     </body>
     </html>
 `;
 
 module.exports = homepage;
+
