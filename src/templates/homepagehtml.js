@@ -31,7 +31,7 @@ const homepage = (posts) => `
             </div>
 
             <footer>
-                <p>Find the code on <a href="https://github.com/alextorrer"> github</a></p>
+                <p>Find the code on <a href="https://github.com/alextorrer/haskell-ssg"> github</a></p>
             </footer>
         </div>
     </body>
