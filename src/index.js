@@ -1,7 +1,7 @@
 const config = require('./config');
 const postMethods = require('./util/posts'); //Funciones para convertir los .md a html y exportarlos
 const fs = require('fs'); //Servicio de archivos de Node
-const addHomePage = require('./homepage'); //Función para crear el home y exportarlo a public
+const addHomePage = require('./util/homepage'); //Función para crear el home y exportarlo a public
 
 //Leer los .md y enviar el nombre del archivo a createPost para convertirlos
 const posts = fs
