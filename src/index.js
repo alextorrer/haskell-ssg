@@ -1,8 +1,9 @@
 const config = require('./config');
-const postMethods = require('./posts');
-const fs = require('fs');
-const addHomePage = require('./homepage');
+const postMethods = require('./util/posts'); //Funciones para convertir los .md a html y exportarlos
+const fs = require('fs'); //Servicio de archivos de Node
+const addHomePage = require('./homepage'); //Función para crear el home y exportarlo a public
 
+//Leer los .md y enviar el nombre del archivo a createPost para convertirlos
 const posts = fs
                 .readdirSync(config.dev.postdir)
                 .map((post)=>post.slice(0,-3)) //Remove .md
@@ -13,5 +14,5 @@ if(!fs.existsSync(config.dev.outdir)){
     fs.mkdirSync(config.dev.outdir);
 }
 
-postMethods.createPosts(posts);
-addHomePage(posts);
+postMethods.createPosts(posts); //Exportar los posts ya convertidos a sus carpetas en public
+addHomePage(posts); //Añadir la información de los posts a Home

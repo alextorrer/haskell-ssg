@@ -1,5 +1,6 @@
 const config = require('../config');
 
+//Homepage es una función que recibe la información de los posts por parámetro y devuelve un documento HTML
 const homepage = (posts) => `
     <!DOCTYPE html>
     <html lang="en">

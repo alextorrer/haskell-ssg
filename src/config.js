@@ -1,3 +1,4 @@
+//Objeto con variables de configuración
 const config = {
     blogName: 'Blog',
     blogDescription: 'This blog is a static site',

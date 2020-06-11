@@ -1,3 +1,5 @@
+//Funcion que recibe la información de un post y devuelve un HTML
+
 const posthtml = (data) => `
     <!DOCTYPE html>
     <html lang="en">
