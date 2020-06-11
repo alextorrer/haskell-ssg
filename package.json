@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "node ./src/index.js",
-    "start": "live-server ./public"
+    "start": "npm run build && live-server ./public"
   },
   "keywords": [],
   "author": "",
