@@ -12,30 +12,41 @@ const homepage = (posts) => `
         <title>${config.blogName}</title>
     </head>
     <body>
-        <div class="grotesk">
-
-            <header>
+        <main class="home-main-container">
+            <section class="container logo-main-container">
+                <div>
+                    <img src="./assets/img/haskell-logo.png" alt="haskell logo">
+                </div>
                 <h1>${config.blogName}</h1>
-                <p>-</p>
-                <p>This blog is written by ${config.authorName}</p>
-                <hr/>
-            </header>
+            </section>
+    
+            <section class="posts-main-container">
+                <div>
+                    ${posts.map((post) => `
+                        <article class="post-container">
+                            <div class="post-data-container">
+                                <h3>${post.attributes.title}</h3>
+                                <p>${post.attributes.description}</p>
+                            </div>
+                            
+                            <div class="post-link-container">
+                                <a href="./${post.path}"><img src="./assets/img/arrow.png" alt="arrow icon"></a>
+                            </div>
+                        </article>
+                    `).join("")} 
+                </div>
+            </section>    
+        </main>
         
-            <div class="posts">
-                ${posts.map((post) => `
-                    <div class="post">
-                        <h3><a href="./${post.path}" >${post.attributes.title}</a></h3>
-                        <p>${post.attributes.description}</p>
-                    </div>
-                `).join("")}
-            </div>
+        <footer>
+            <p>Iconos por <a href="https://www.flaticon.es/autores/becris" title="Becris">Becris</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a></p>
 
-            <footer>
-                <p>Find the code on <a href="https://github.com/alextorrer/haskell-ssg"> github</a></p>
-            </footer>
-        </div>
+            <a href="https://github.com/alextorrer/haskell-ssg"><img src="./assets/img/github.png" alt=""></a>
+        </footer>
+
     </body>
     </html>
 `;
 
 module.exports = homepage;
+
