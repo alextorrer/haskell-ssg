@@ -12,32 +12,36 @@ const homepage = (posts) => `
         <title>${config.blogName}</title>
     </head>
     <body>
-        <section class="home-main-container">
-            <div class="home-logo-container">
-                <img src="" alt="haskell logo">
-            </div>
-            <h1>${config.blogName}</h1>
-        </section>
-
-        <section class="posts-main-container">
-            <div>
-                ${posts.map((post) => `
-                    <article class="post">
-                        <h3>${post.attributes.title}</h3>
-                        <p>${post.attributes.description}</p>
-                        <div class="post-link-container">
-                            <a href="./${post.path}"><img src="" alt="arrow icon"></a>
-                        </div>
-                    </article>
-                `).join("")} 
-            </div>
-        </section>
-
+        <main class="home-main-container">
+            <section class="container logo-main-container">
+                <div>
+                    <img src="./assets/img/haskell-logo.png" alt="haskell logo">
+                </div>
+                <h1>${config.blogName}</h1>
+            </section>
+    
+            <section class="posts-main-container">
+                <div>
+                    ${posts.map((post) => `
+                        <article class="post-container">
+                            <div class="post-data-container">
+                                <h3>${post.attributes.title}</h3>
+                                <p>${post.attributes.description}</p>
+                            </div>
+                            
+                            <div class="post-link-container">
+                                <a href="./${post.path}"><img src="./assets/img/arrow.png" alt="arrow icon"></a>
+                            </div>
+                        </article>
+                    `).join("")} 
+                </div>
+            </section>    
+        </main>
+        
         <footer>
-            <div class="footer-logo-container">
-                <img src="" alt="">
-                <a href="https://github.com/alextorrer/haskell-ssg">Github Repository</a>
-            </div>
+            <p>Iconos por <a href="https://www.flaticon.es/autores/becris" title="Becris">Becris</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a></p>
+
+            <a href="https://github.com/alextorrer/haskell-ssg"><img src="./assets/img/github.png" alt=""></a>
         </footer>
 
     </body>
