@@ -13,8 +13,20 @@ a{
   font-style: italic;
 }
 
+@keyframes fadeIn{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes slideIn{
+  100% {top: 0;}
+
+}
+
 .home-main-container{
   margin: 0 4vw;
+  animation-name: fadeIn;
+  animation-duration: 2s;
 }
 
 
@@ -24,6 +36,7 @@ a{
   align-items: center;
   justify-content: center;
   margin-bottom: 5vw;
+  
 }
 
 .logo-main-container div img{
@@ -31,12 +44,13 @@ a{
   max-width: 250px;
   min-width: 150px;
   padding: 10px;
+  
 }
 
 .logo-main-container h1{
   font-family: 'Raleway', sans-serif;
   font-size: 130px;
-  margin-top: 5vw;
+  margin: 0 0 5vw 0;
   font-weight: 900;
 }
 
