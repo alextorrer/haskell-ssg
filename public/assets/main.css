@@ -21,7 +21,10 @@ a{
 
 @keyframes slideIn{
   100% {top: 0;}
+}
 
+.arrow-icon{
+  width: 1.7em;
 }
 
 .home-main-container{
@@ -71,7 +74,7 @@ a{
   width: 85%;
 }
 
-.post-link-container img{
+.post-link-container {
   width: 20px;
 }
 
