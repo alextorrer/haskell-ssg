@@ -8,7 +8,7 @@ const posts = fs
                 .readdirSync(config.dev.postdir)
                 .map((post)=>post.slice(0,-3)) //Remove .md
                 .map((post) => postMethods.createPost(post));
-console.log(posts);
+//console.log(posts);
 
 if(!fs.existsSync(config.dev.outdir)){
     fs.mkdirSync(config.dev.outdir);

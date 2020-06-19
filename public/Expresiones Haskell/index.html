@@ -1,0 +1,88 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+        <title>Expresiones</title>
+    </head>
+    <body>
+        <header>
+            <a href="/">Go back home</a>
+        </header>
+        <div class="content">
+            <h1>Expresiones</h1>
+            <hr />
+            <h1 id="expresiones">Expresiones</h1>
+<p>En <em>Haskell</em> no son muy diferentes los operadores de otros lenguajes de programación de los que estamos acostumbrados a este nivel de nuestra carrera, pero sí cambian en unas mínimas partes, como por ejemplo el operador <strong>diferente</strong>, aquí tienes algunos ejemplos de los operadores que usa <em>Haskell</em>.</p>
+<h2 id="tipos-de-operadores">Tipos de operadores</h2>
+<ul>
+<li>igualdad ( = )</li>
+<li>suma ( + )</li>
+<li>resta ( - )</li>
+<li>multiplicación ( * )</li>
+<li>división ( / )</li>
+<li>mod ( % )</li>
+<li>concatenación ( ++ )</li>
+<li>and ( &amp;&amp; )</li>
+<li>or ( || )</li>
+<li>comparación ( == )</li>
+<li>diferente ( /= )</li>
+<li>mayor ( &gt; )</li>
+<li>menor ( &lt; )</li>
+<li>mayor o igual ( =&gt; )</li>
+<li>menor o igual ( &lt;= )</li>
+<li>negación ( not )</li>
+</ul>
+<h3 id="precedencia-y-asociatividad">Precedencia y asociatividad</h3>
+<p>En <em>Haskell</em> todo operador toma por defecto priodridad 9 y asociatividad izquierda.</p>
+<p>A la hora de definir un operador podemos indicar su:</p>
+<ul>
+<li>prioridad (0 a 9; 10 es la prioridad máxima reservada para la aplicación de funciones)</li>
+<li>su asociatividad</li>
+</ul>
+<p><em>Infix</em></p>
+<ul>
+<li>Para declarar el tipo de un operador hay que escribir el identificador entre paréntesis.</li>
+<li>En la parte izquierda de la definición del cuerpo del operador se puede usar notación infija (el operador aparece entre sus dos argumentos).</li>
+</ul>
+<p><strong>infix</strong> prioridad <em>identificador operador</em> (define un operador no asociativo).
+<strong>infixl</strong> prioridad <em>identificador operador</em> (define un operador asociativo a la izquierda).
+<strong>infixr</strong> prioridad <em>identificador operador</em> (define un operador asociativo a la derecha).</p>
+<p>Ejemplo:</p>
+<ul>
+<li>infix 4 (~=)</li>
+<li>infixl 1 (&gt;&gt;)</li>
+<li>infixr 9 (!!)</li>
+</ul>
+<h4 id="ejemplos-de-sintaxis-de-operadores">Ejemplos de sintaxis de operadores</h4>
+<p>Algunos ejemplos de los tipos expresiones simples son con Prelude (que viene siendo como un Prompt o una ejecución rápida).</p>
+<p>  <code>Prelude&gt; 3 * 5</code>
+  15
+  <code>Prelude&gt; 4 ^ 2 - 1</code>
+  15
+  <code>Prelude&gt; (1 - 5)^(3 * 2 - 4)</code>
+  16</p>
+<p>  Las cadenas van entre &quot;comillas dobles.&quot; Puede concatenarlas con ++.
+  <code>Prelude&gt; &quot;Hello&quot;</code>
+  &quot;Hello&quot;
+  <code>Prelude&gt; &quot;Hello&quot; ++ &quot;, Haskell&quot;</code>
+  &quot;Hello, Haskell&quot;</p>
+<p>  Las funciones se llaman colocando los argumentos directamente después del nombre de la función. No hay paréntesis en la llamada a la función.
+  <code>Prelude&gt; succ 5</code>
+  6
+  <code>Prelude&gt; truncate 6.59</code>
+  6
+  <code>Prelude&gt; round 6.59</code>
+  7
+  <code>Prelude&gt; sqrt 2</code>
+  1.4142135623730951
+  <code>Prelude&gt; not (5 &lt; 3)</code>
+  True
+  <code>Prelude&gt; gcd 21 14</code>
+  7</p>
+
+        </div>
+    </body>
+    </html>
