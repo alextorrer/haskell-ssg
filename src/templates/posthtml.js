@@ -19,7 +19,17 @@ const posthtml = (data) => `
             <hr />
             ${data.body}
         </div>
+
+        <footer>
+            <div>
+                <p>Iconos por <a href="https://www.flaticon.es/autores/becris" title="Becris">Becris</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a></p>
+            </div>
+            <div>
+                <a href="https://github.com/alextorrer/haskell-ssg"><img src="../assets/img/github.png" alt=""></a>
+            </div>
+        </footer>
     </body>
+
     </html>
 `;
 
