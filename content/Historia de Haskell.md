@@ -1,7 +1,12 @@
+---
+title: Historia de Haskell
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+---
+
 # Historia del lenguaje
 Lenguaje de programación Haskell. Es un lenguaje de programación puramente funcional, de propósito general. El nombre proviene del matemático y lógico estadounidense Haskell Curry.
 
-##Justifiación de su creación
+## Justifiación de su creación
 En 1987, existían compitiendo entre ellos más de una docena de lenguajes de programación puros funcionales no estrictos. Durante la conferencia sobre *Lenguajes de Programación Funcional y Arquitecturas de Ordenador* (FPCA 87) en Portland, Oregón, se mantuvo un encuentro durante el cual se alcanzó un fuerte consenso entre sus participantes para formar un comité que definiese un estándar abierto para tales lenguajes.
 Esto se hizo con el propósito de
 
@@ -17,7 +22,7 @@ El comité expresamente aprobó la creación de extensiones y variantes de Haske
 
 En enero de 1999, el estándar del lenguaje Haskell 98 se publicó en *The Haskell 98 Report*. En enero de 2003, se publicó una versión revisada en *Haskell 98 Language and Libraries: The Revised Report*. A principios del 2006 comenzó el proceso de definición de un sucesor del estándar de Haskell 98, llamado informalmente **Haskell** (*Haskell Prime*). Este proceso intenta producir una revisión menor de Haskell 98. En 2010 se lanza **Haskell 2010**.
 
-###Paradigma, dominio, área de aplicación
+### Paradigma, dominio, área de aplicación
 Haskell es puramente funcional que tiene como objetivo la utilización de funciones matemáticas puras sin efectos laterales y, por tanto, sin asignaciones destructivas.
 
 El esquema del modelo funcional es similar al de una calculadora. Se establece una sesión interactiva entre sistema y usuario: el usuario introduce una expresión inicial y el sistema la evalúa mediante un proceso de reducción. En este proceso se utilizan las definiciones de función realizadas por el programador hasta obtener un valor no reducible.
@@ -26,5 +31,5 @@ El programador se encarga de definir un conjunto de funciones sin preocuparse de
 
 La importancia de la programación funcional no radica únicamente en no utilizar asignaciones destructivas. Por el contrario, este modelo promueve la utilización de una serie de características como las funciones de orden superior, los sistemas de inferencia de tipos, el polimorfismo, la evaluación perezosa y otras.
 
-####Ventajas y desventajas
+#### Ventajas y desventajas
 Entre las ventajas de los lenguajes funcionales como lo es Haskell es que evalúa expresiones por lo que no tendrá errores con tipos de datos erróneos, otra de las ventajas es que se elimina la secuenciación, es decir que solo se preocupa por lo que el programa calcula y no cómo lo calcula, esto permite ser más flexible y más fácil de usar, aunque una de las desventajas en comparación de otros lenguajes es que no puedes decirle al ordenador paso a paso explícitamente cómo realizar una tarea que en otros lenguajes como por ejemplo Java sí podrías.

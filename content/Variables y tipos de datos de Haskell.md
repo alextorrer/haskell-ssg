@@ -1,7 +1,12 @@
-#Variables y tipos de datos
+---
+title: Variables y tipos de datos
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+---
+
+# Variables y tipos de datos
 Al ser *Haskell* un lenguaje funcional puro, todos los cálculos se hacen a través de la evaluación de expresiones para producir valores. Todo valor tiene asociado un tipo de dato. Por ejemplo: el **entero** 5 o el **carácter** 'a'.
 
-##Creación de identificadores
+## Creación de identificadores
 Un identificador comienza con una letra del alfabeto seguida opcionalmente, por un secuencia de caracteres, cada uno de los cuales es una letra, un dígito, un apóstrofe o un subrayado. Los indentificadores que representan funciones o variables deben comenzar por letra **minúscula** (comienzan con mayúsculas las funciones contructuras). Los siguientes son ejemplos de posibles identificadores:
 
 - sum
@@ -24,7 +29,7 @@ Los siguientes identificadores son palabras reservadas y **no pueden utilizarse*
 - infixr
 - primitive class instance
 
-###Tipos de datos básicos
+### Tipos de datos básicos
 Bool (Valores lógicos), Sus valores son *True y False*.
 Char (Caracteres), *ejemplos: 'a', 'B', '3', '+'*.
 String (Cadena de caracteres), *ejemplos: "abc", "1 + 2 = 3"*.
@@ -33,7 +38,7 @@ Integer (Enteros de precisión arbitraria), *ejemplos: 1267650600228229401496703
 Float (Reales de precisión arbitraria), *ejemplos: 1.2, -23.45, 45e-7*.
 Double (Reales de precisión doble), *ejemplos: 1.2, -23.45, 45e-7*.
 
-####Forma de relacionar un tipo de dato a una variable
+#### Forma de relacionar un tipo de dato a una variable
 En cierto sentido, los tipos describen valores, y la asociación de un valor con su tipo se llama un tipificado (typing). Usando los ejemplos anteriores, podemos escribir "tipificaciones" como los siguientes:
 
   5 :: Integer

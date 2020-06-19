@@ -1,7 +1,12 @@
-#Expresiones
+---
+title: Expresiones
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+---
+
+# Expresiones
 En *Haskell* no son muy diferentes los operadores de otros lenguajes de programación de los que estamos acostumbrados a este nivel de nuestra carrera, pero sí cambian en unas mínimas partes, como por ejemplo el operador **diferente**, aquí tienes algunos ejemplos de los operadores que usa *Haskell*.
 
-##Tipos de operadores
+## Tipos de operadores
 
 - igualdad ( = )
 - suma ( + )
@@ -20,7 +25,7 @@ En *Haskell* no son muy diferentes los operadores de otros lenguajes de programa
 - menor o igual ( <= )
 - negación ( not )
 
-###Precedencia y asociatividad
+### Precedencia y asociatividad
 En *Haskell* todo operador toma por defecto priodridad 9 y asociatividad izquierda.
 
 A la hora de definir un operador podemos indicar su:
@@ -41,7 +46,7 @@ Ejemplo:
 - infixl 1 (>>)
 - infixr 9 (!!)
 
-####Ejemplos de sintaxis de operadores
+#### Ejemplos de sintaxis de operadores
 
 Algunos ejemplos de los tipos expresiones simples son con Prelude (que viene siendo como un Prompt o una ejecución rápida).
 

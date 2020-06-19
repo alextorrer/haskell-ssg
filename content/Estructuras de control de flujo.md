@@ -1,8 +1,14 @@
-#Estructuras de control de flujo
+---
+title: Estructuras de control de flujo
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+---
+
+# Estructuras de control de flujo
 En *Haskell* contamos con dos formas de estructura condicional y no contamos con ninguna estructura de repetición, sin embargo, contamos con una alternativa.
 
-##Condicional
+## Condicional
 La primera forma de estructura condicional es por búsqueda de *patrones* en los argumentos de la función:
+
   ``
   1 undostres :: Int -> String
   2 undostres 1 = "uno"
@@ -32,7 +38,7 @@ La segunda forma de estructura condicional se basa en utilizar "guardas", repres
 
 En las líneas 3 y 4 podemos ver cómo se definen 2 resultados para la función **positivoNegativo** basándose en condiciones. Los resultados son aquellos que están después del símbolo **=**. Las condiciones se encuentran previamente en cada línea, entre el símbolo **|** y el **=**. La palabra clave **otherwise** sirve para marcar lo que la función debe devolver en caso de que no se cumpla ninguna de las otras condiciones de las guardas previas.
 
-##Repetición
+## Repetición
 Como mencionamos al principio de esta sección, no contamos con estructuras de control, pero contamos con una alternativa más naturalmente cercana al lenguaje funcional: *la recursión*:
   ``
   1 acumular :: [Int] -> Int
