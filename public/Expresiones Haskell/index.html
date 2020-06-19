@@ -1,0 +1,107 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="En programación, una expresión es una combinación de constantes, variables o funciones, que es interpretada de acuerdo a las normas particulares de precedencia y asociación para un lenguaje de programación en particular. Como en matemáticas, la expresión es su valor evaluado, es decir, la expresión es una representación de ese valor." />
+        <link href="../assets/main.css" rel="stylesheet" type="text/css"/>
+        <title>Expresiones</title>
+    </head>
+    <body>
+        <header>
+            <a href="/"><img class="arrow-icon" src="../assets/img/arrow-back.png" alt="arrow icon"></a>
+        </header>
+        <div class="content">
+            <h1>Expresiones</h1>
+            <hr />
+            <p>En <em>Haskell</em> no son muy diferentes los operadores de otros lenguajes de programación de los que estamos acostumbrados a este nivel de nuestra carrera, pero sí cambian en unas mínimas partes, como por ejemplo el operador <strong>diferente</strong>, aquí tienes algunos ejemplos de los operadores que usa <em>Haskell</em>.</p>
+<h2 id="tipos-de-operadores">Tipos de operadores</h2>
+<ul>
+<li>igualdad ( = )</li>
+<li>suma ( + )</li>
+<li>resta ( - )</li>
+<li>multiplicación ( * )</li>
+<li>división ( / )</li>
+<li>mod ( % )</li>
+<li>concatenación ( ++ )</li>
+<li>and ( &amp;&amp; )</li>
+<li>or ( || )</li>
+<li>comparación ( == )</li>
+<li>diferente ( /= )</li>
+<li>mayor ( &gt; )</li>
+<li>menor ( &lt; )</li>
+<li>mayor o igual ( =&gt; )</li>
+<li>menor o igual ( &lt;= )</li>
+<li>negación ( not )</li>
+</ul>
+<h3 id="precedencia-y-asociatividad">Precedencia y asociatividad</h3>
+<p>En <em>Haskell</em> todo operador toma por defecto priodridad 9 y asociatividad izquierda.</p>
+<p>A la hora de definir un operador podemos indicar su:</p>
+<ul>
+<li>prioridad (0 a 9; 10 es la prioridad máxima reservada para la aplicación de funciones)</li>
+<li>su asociatividad</li>
+</ul>
+<p><em>Infix</em></p>
+<ul>
+<li>Para declarar el tipo de un operador hay que escribir el identificador entre paréntesis.</li>
+<li>En la parte izquierda de la definición del cuerpo del operador se puede usar notación infija (el operador aparece entre sus dos argumentos).</li>
+</ul>
+<p><strong>infix</strong> prioridad <em>identificador operador</em> (define un operador no asociativo).
+<strong>infixl</strong> prioridad <em>identificador operador</em> (define un operador asociativo a la izquierda).
+<strong>infixr</strong> prioridad <em>identificador operador</em> (define un operador asociativo a la derecha).</p>
+<p>Ejemplo:</p>
+<ul>
+<li>infix 4 (~=)</li>
+<li>infixl 1 (&gt;&gt;)</li>
+<li>infixr 9 (!!)</li>
+</ul>
+<h4 id="ejemplos-de-sintaxis-de-operadores">Ejemplos de sintaxis de operadores</h4>
+<p>Algunos ejemplos de los tipos expresiones simples son con Prelude (que viene siendo como un Prompt o una ejecución rápida).</p>
+<pre><code class="language-haskell">  Prelude&gt; 3 * 5
+         &gt; 15
+
+  Prelude&gt; 4 ^ 2 - 1
+         &gt; 15
+
+  Prelude&gt; (1 - 5)^(3 * 2 - 4)
+         &gt; 16</code></pre>
+<p>  Las cadenas van entre &quot;comillas dobles.&quot; Puede concatenarlas con ++.</p>
+<pre><code class="language-haskell">  Prelude&gt; &quot;Hello&quot;
+        &gt; &quot;Hello&quot;
+
+  Prelude&gt; &quot;Hello&quot; ++ &quot;, Haskell&quot;
+        &gt; &quot;Hello, Haskell&quot;
+</code></pre>
+<p>  Las funciones se llaman colocando los argumentos directamente después del nombre de la función. No hay paréntesis en la llamada a la función.</p>
+<pre><code class="language-haskell">  Prelude&gt; succ 5
+         &gt; 6
+
+  Prelude&gt; truncate 6.59
+         &gt; 6
+
+  Prelude&gt; round 6.59
+         &gt; 7
+
+  Prelude&gt; sqrt 2
+         &gt; 1.4142135623730951
+
+  Prelude&gt; not (5 &lt; 3)
+         &gt; True
+
+  Prelude&gt; gcd 21 14
+         &gt; 7</code></pre>
+
+        </div>
+
+        <footer>
+            <div>
+                <p>Iconos por <a href="https://www.flaticon.es/autores/becris" title="Becris">Becris</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a></p>
+            </div>
+            <div>
+                <a href="https://github.com/alextorrer/haskell-ssg"><img src="../assets/img/github.png" alt=""></a>
+            </div>
+        </footer>
+    </body>
+
+    </html>

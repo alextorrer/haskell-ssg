@@ -1,7 +1,11 @@
-#Expresiones
+---
+title: Expresiones
+description: En programación, una expresión es una combinación de constantes, variables o funciones, que es interpretada de acuerdo a las normas particulares de precedencia y asociación para un lenguaje de programación en particular. Como en matemáticas, la expresión es su valor evaluado, es decir, la expresión es una representación de ese valor.
+---
+
 En *Haskell* no son muy diferentes los operadores de otros lenguajes de programación de los que estamos acostumbrados a este nivel de nuestra carrera, pero sí cambian en unas mínimas partes, como por ejemplo el operador **diferente**, aquí tienes algunos ejemplos de los operadores que usa *Haskell*.
 
-##Tipos de operadores
+## Tipos de operadores
 
 - igualdad ( = )
 - suma ( + )
@@ -20,7 +24,7 @@ En *Haskell* no son muy diferentes los operadores de otros lenguajes de programa
 - menor o igual ( <= )
 - negación ( not )
 
-###Precedencia y asociatividad
+### Precedencia y asociatividad
 En *Haskell* todo operador toma por defecto priodridad 9 y asociatividad izquierda.
 
 A la hora de definir un operador podemos indicar su:
@@ -41,33 +45,49 @@ Ejemplo:
 - infixl 1 (>>)
 - infixr 9 (!!)
 
-####Ejemplos de sintaxis de operadores
+#### Ejemplos de sintaxis de operadores
 
 Algunos ejemplos de los tipos expresiones simples son con Prelude (que viene siendo como un Prompt o una ejecución rápida).
 
-  ``Prelude> 3 * 5``
-  15
-  ``Prelude> 4 ^ 2 - 1``
-  15
-  ``Prelude> (1 - 5)^(3 * 2 - 4)``
-  16
+  ```haskell
+  Prelude> 3 * 5
+         > 15
 
+  Prelude> 4 ^ 2 - 1
+         > 15
+
+  Prelude> (1 - 5)^(3 * 2 - 4)
+         > 16
+  ```
+  
   Las cadenas van entre "comillas dobles." Puede concatenarlas con ++.
-  ``Prelude> "Hello"``
-  "Hello"
-  ``Prelude> "Hello" ++ ", Haskell"``
-  "Hello, Haskell"
+
+  ```haskell
+  Prelude> "Hello"
+        > "Hello"
+
+  Prelude> "Hello" ++ ", Haskell"
+        > "Hello, Haskell"
+
+  ```
 
   Las funciones se llaman colocando los argumentos directamente después del nombre de la función. No hay paréntesis en la llamada a la función.
-  ``Prelude> succ 5``
-  6
-  ``Prelude> truncate 6.59``
-  6
-  ``Prelude> round 6.59``
-  7
-  ``Prelude> sqrt 2``
-  1.4142135623730951
-  ``Prelude> not (5 < 3)``
-  True
-  ``Prelude> gcd 21 14``
-  7
+
+  ```haskell
+  Prelude> succ 5
+         > 6
+
+  Prelude> truncate 6.59
+         > 6
+
+  Prelude> round 6.59
+         > 7
+
+  Prelude> sqrt 2
+         > 1.4142135623730951
+
+  Prelude> not (5 < 3)
+         > True
+
+  Prelude> gcd 21 14
+         > 7

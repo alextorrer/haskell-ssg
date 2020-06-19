@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@1&display=swap');
 
 *{
-  font-family: 'Consolas';
+  font-family: 'Itim', cursive;
   background-color: whitesmoke;
   box-sizing: border-box;
+  animation-name: fadeIn;
+  animation-duration: 1s;
 }
 
 
@@ -20,15 +23,37 @@ a{
 
 @keyframes slideIn{
   100% {top: 0;}
+}
 
+header{
+  height: 150px;
+}
+
+header img{
+  margin: 3em;
+}
+
+footer{
+  margin: 80px 0 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  color: rgb(26, 25, 25);
+}
+
+footer img{
+  width: 60px;
+}
+
+
+.arrow-icon{
+  width: 1.7em;
 }
 
 .home-main-container{
   margin: 0 4vw;
-  animation-name: fadeIn;
-  animation-duration: 2s;
 }
-
 
 .logo-main-container{
   display: flex;
@@ -57,6 +82,7 @@ a{
 .posts-main-container{
   width: 70vw;
   margin: 0 auto;
+  font-size: 1.5em;
 }
 
 .post-container{
@@ -69,27 +95,45 @@ a{
   width: 85%;
 }
 
-.post-link-container img{
+.post-link-container {
   width: 20px;
 }
 
-
-footer{
-  margin: 80px 0 0 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 15px;
-  color: rgb(26, 25, 25);
+.content{
+  width: 70vw;
+  margin: 0 auto;
+  font-size: large;
 }
 
-footer img{
-  width: 60px;
+.content pre {
+  display: flex;
+  justify-content: center;
+  background-color: #161616;
+  width: 50%;
+  margin: auto;
+  max-width: 90%;
+}
+
+.content pre code{
+  background-color: inherit;
+  padding: 10px;
+  font-family: 'Source Code Pro', monospace;
+  font-size: smaller;
+  color: white;
+  font-weight: 500;
+}
+
+.content blockquote{
+  color: #474747;
+  font-style: italic;
 }
 
 @media only screen and (max-width: 800px){
   .logo-main-container h1{
     font-size: 100px;
+  }
+  .posts-main-container{
+    font-size: 1em;
   }
 }
 
@@ -106,3 +150,4 @@ footer img{
     font-size: 10px;
   }
 }
+

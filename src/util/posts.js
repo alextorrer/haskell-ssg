@@ -26,7 +26,7 @@ const createPosts = (posts) => {
                 if(e){
                     throw e;
                 }
-                console.log(`${post.path}/index.html was created succesfully`);
+                //console.log(`${post.path}/index.html was created succesfully`);
             }
         );
     });

@@ -30,7 +30,7 @@ const homepage = (posts) => `
                             </div>
                             
                             <div class="post-link-container">
-                                <a href="./${post.path}"><img src="./assets/img/arrow.png" alt="arrow icon"></a>
+                                <a href="./${post.path}"><img class="arrow-icon" src="./assets/img/arrow.png" alt="arrow icon"></a>
                             </div>
                         </article>
                     `).join("")} 
