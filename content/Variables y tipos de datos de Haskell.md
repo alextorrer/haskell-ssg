@@ -1,9 +1,8 @@
 ---
 title: Variables y tipos de datos
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+description: Las variables son espacios reservados en la memoria que, como su nombre indica, pueden cambiar de contenido a lo largo de la ejecución de un programa. Una variable corresponde a un área reservada en la memoria principal del ordenador. El tipo de dato informático es un atributo de una parte de los datos que indica al ordenador (y/o al programador) algo sobre la clase de datos sobre los que se va a procesar.
 ---
 
-# Variables y tipos de datos
 Al ser *Haskell* un lenguaje funcional puro, todos los cálculos se hacen a través de la evaluación de expresiones para producir valores. Todo valor tiene asociado un tipo de dato. Por ejemplo: el **entero** 5 o el **carácter** 'a'.
 
 ## Creación de identificadores
@@ -41,13 +40,15 @@ Double (Reales de precisión doble), *ejemplos: 1.2, -23.45, 45e-7*.
 #### Forma de relacionar un tipo de dato a una variable
 En cierto sentido, los tipos describen valores, y la asociación de un valor con su tipo se llama un tipificado (typing). Usando los ejemplos anteriores, podemos escribir "tipificaciones" como los siguientes:
 
+```haskell
   5 :: Integer
   'a' :: Char
   inc :: Integer -> Integer
   [1,2,3] :: [Integer]
   ('b',4) :: (Char,Integer)
+```
 
 El símbolo "::" puede leerse "tiene el tipo".
 
 El sistema de tipificación estático de *Haskell* define formalmente la relación entre tipos y valores. Esta tipificación estática asegura que un programa Haskell está bien tipificado (type safe); es decir, que el programador no puede evaluar expresiones con tipos erróneos. Por ejemplo, no podemos sumar dos caracteres, ya que la expresión 'a'+'b' está mal tipificada. La ventaja principal del tipificación estática es bien conocida:
->todos los errores de tipificado son detectados durante la compilación.
+>Todos los errores de tipificado son detectados durante la compilación.

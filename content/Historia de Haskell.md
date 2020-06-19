@@ -1,9 +1,8 @@
 ---
 title: Historia de Haskell
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+description: En los años 1980 se constituyó un comité cuyo objetivo era crear un lenguaje funcional que reuniera las características de los múltiples lenguajes funcionales de la época, el más notable Miranda, y resolviera la confusión creada por la proliferación de los mismos. Haskell, es un lenguaje de programación estandarizado multi-propósito, FUNCIONALMENTE PURO.
 ---
 
-# Historia del lenguaje
 Lenguaje de programación Haskell. Es un lenguaje de programación puramente funcional, de propósito general. El nombre proviene del matemático y lógico estadounidense Haskell Curry.
 
 ## Justifiación de su creación
@@ -13,9 +12,9 @@ Esto se hizo con el propósito de
 > Consolidar los lenguajes existentes en uno único que sirviera como base para la investigación futura en diseño de lenguajes.​
 
 La primera versión de **Haskell** (*Haskell 1.0*) se definió en 1990. Los esfuerzos del comité resultaron en una serie de definiciones del lenguaje, que culminaron a finales de 1997 en **_Haskell 98_**, que se intentó fuera una versión del lenguaje:
-- mínima
-- estable
-- y portable
+- Mínima
+- Estable
+- Portable
 junto con una biblioteca estándar asociada para la enseñanza, y como base de futuras extensiones.
 
 El comité expresamente aprobó la creación de extensiones y variantes de Haskell 98 mediante la adición e incorporación de características experimentales.

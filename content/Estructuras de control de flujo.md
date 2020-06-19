@@ -1,53 +1,62 @@
 ---
 title: Estructuras de control de flujo
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+description: En los lenguajes de programación, las estructuras de control permiten modificar el flujo de ejecución de las instrucciones de un programa. Se puede ejecutar un grupo u otro de sentencias de acuerdo a una condición (if-then-else). Ejecutar un grupo u otro de sentencias de acuerdo al valor de una variable (switch-case).
 ---
 
-# Estructuras de control de flujo
 En *Haskell* contamos con dos formas de estructura condicional y no contamos con ninguna estructura de repetición, sin embargo, contamos con una alternativa.
+
+
 
 ## Condicional
 La primera forma de estructura condicional es por búsqueda de *patrones* en los argumentos de la función:
 
-  ``
-  1 undostres :: Int -> String
-  2 undostres 1 = "uno"
-  3 undostres 2 = "dos"
-  4 undostres 3 = "tres"
-  5 undostres x = "otro"
-  6
-  7  main = do
-  8    print(undostres 2)
-  ``
-dos
+  ```haskell
+  undostres :: Int -> String
+  undostres 1 = "uno"
+  undostres 2 = "dos"
+  undostres 3 = "tres"
+  undostres x = "otro"
+  
+  main = do
+      print(undostres 2)
+
+  >>dos
+  ```
+
 
 Esto funciona igual que un "case" o "switch"en otros lenguajes. Los patroness son los números que aparecen como argumentos **1, 2, 3, x**. El argumento de la función se compara por igualdad **=** con cada uno de los "patrones". Si el argumento es igual a algún patrón, ejecuta y retorna lo que aparece en esa línea después del **=**. Si no es igual a ningún patrón determinado (**1, 2, 3**) ejecuta y retorna lo que aparece con patrón **x**.
 
 La segunda forma de estructura condicional se basa en utilizar "guardas", representadas por el símbolo **|**:
-  ``
-  1 positivoNegativo :: Int -> String
-  2 positivoNegativo :: a
-  3   | a > 0        = "positivo"
-  4   | a < 0        = "negativo"
-  5   | otherwise    = "neutro"
-  6
-  7 main = do  
-  8   print( positivoNegativo 2 )
-  ``
-  positivo
+
+  ```haskell
+  positivoNegativo :: Int -> String 
+  positivoNegativo :: a
+            | a > 0    = "positivo"
+            | a < 0    = "negativo"
+            | otherwise = "neutro"
+  
+  main = do  
+     print( positivoNegativo 2 )
+
+  >>positivo
+  ```
+
 
 En las líneas 3 y 4 podemos ver cómo se definen 2 resultados para la función **positivoNegativo** basándose en condiciones. Los resultados son aquellos que están después del símbolo **=**. Las condiciones se encuentran previamente en cada línea, entre el símbolo **|** y el **=**. La palabra clave **otherwise** sirve para marcar lo que la función debe devolver en caso de que no se cumpla ninguna de las otras condiciones de las guardas previas.
 
+
+
 ## Repetición
 Como mencionamos al principio de esta sección, no contamos con estructuras de control, pero contamos con una alternativa más naturalmente cercana al lenguaje funcional: *la recursión*:
-  ``
-  1 acumular :: [Int] -> Int
-  2 acumular [] = 0
-  3 acumular  (x:xs) = x + acumular
-  4
-  5 main = do
-  6   print( acumular [5,6,7] )
-  ``
+
+  ```haskell
+  acumular :: [Int] -> Int
+  acumular [] = 0
+  acumular (x:xs) = x + acumular
+  
+  main = do
+     print( acumular [5,6,7] )
+  ```
 
 En la línea 2 se define el caso base: cuando se presenta una lista vacía, retorna **0**.
 
