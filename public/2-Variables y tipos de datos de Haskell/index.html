@@ -1,0 +1,75 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Las variables son espacios reservados en la memoria que, como su nombre indica, pueden cambiar de contenido a lo largo de la ejecución de un programa. Una variable corresponde a un área reservada en la memoria principal del ordenador. El tipo de dato informático es un atributo de una parte de los datos que indica al ordenador (y/o al programador) algo sobre la clase de datos sobre los que se va a procesar." />
+        <link href="../assets/main.css" rel="stylesheet" type="text/css"/>
+        <title>Variables y tipos de datos</title>
+    </head>
+    <body>
+        <header>
+            <a href="/"><img class="arrow-icon" src="../assets/img/arrow-back.png" alt="arrow icon"></a>
+        </header>
+        <div class="content">
+            <h1>Variables y tipos de datos</h1>
+            <hr />
+            <p>Al ser <em>Haskell</em> un lenguaje funcional puro, todos los cálculos se hacen a través de la evaluación de expresiones para producir valores. Todo valor tiene asociado un tipo de dato. Por ejemplo: el <strong>entero</strong> 5 o el <strong>carácter</strong> &#39;a&#39;.</p>
+<h2 id="creación-de-identificadores">Creación de identificadores</h2>
+<p>Un identificador comienza con una letra del alfabeto seguida opcionalmente, por un secuencia de caracteres, cada uno de los cuales es una letra, un dígito, un apóstrofe o un subrayado. Los indentificadores que representan funciones o variables deben comenzar por letra <strong>minúscula</strong> (comienzan con mayúsculas las funciones contructuras). Los siguientes son ejemplos de posibles identificadores:</p>
+<ul>
+<li>sum</li>
+<li>f</li>
+<li>f&#39;&#39;</li>
+<li>intSum</li>
+<li>elemento_dos</li>
+<li>do&#39;until&#39;zero</li>
+</ul>
+<p>Los siguientes identificadores son palabras reservadas y <strong>no pueden utilizarse</strong> como nombres de funciones o variables:</p>
+<ul>
+<li>case of</li>
+<li>where</li>
+<li>let in</li>
+<li>if then</li>
+<li>else</li>
+<li>data type</li>
+<li>infix</li>
+<li>infixl</li>
+<li>infixr</li>
+<li>primitive class instance</li>
+</ul>
+<h3 id="tipos-de-datos-básicos">Tipos de datos básicos</h3>
+<p>Bool (Valores lógicos), Sus valores son <em>True y False<em>.
+Char (Caracteres), <em>ejemplos: &#39;a&#39;, &#39;B&#39;, &#39;3&#39;, &#39;+&#39;<em>.
+String (Cadena de caracteres), <em>ejemplos: &quot;abc&quot;, &quot;1 + 2 = 3&quot;</em>.
+Int (Enteros de precisión fija), *ejemplos: 123, -12</em>.
+Integer (Enteros de precisión arbitraria), *ejemplos: 1267650600228229401496703205376</em>.
+Float (Reales de precisión arbitraria), *ejemplos: 1.2, -23.45, 45e-7</em>.
+Double (Reales de precisión doble), *ejemplos: 1.2, -23.45, 45e-7</em>.</p>
+<h4 id="forma-de-relacionar-un-tipo-de-dato-a-una-variable">Forma de relacionar un tipo de dato a una variable</h4>
+<p>En cierto sentido, los tipos describen valores, y la asociación de un valor con su tipo se llama un tipificado (typing). Usando los ejemplos anteriores, podemos escribir &quot;tipificaciones&quot; como los siguientes:</p>
+<pre><code class="language-haskell">  5 :: Integer
+  &#39;a&#39; :: Char
+  inc :: Integer -&gt; Integer
+  [1,2,3] :: [Integer]
+  (&#39;b&#39;,4) :: (Char,Integer)</code></pre>
+<p>El símbolo &quot;::&quot; puede leerse &quot;tiene el tipo&quot;.</p>
+<p>El sistema de tipificación estático de <em>Haskell</em> define formalmente la relación entre tipos y valores. Esta tipificación estática asegura que un programa Haskell está bien tipificado (type safe); es decir, que el programador no puede evaluar expresiones con tipos erróneos. Por ejemplo, no podemos sumar dos caracteres, ya que la expresión &#39;a&#39;+&#39;b&#39; está mal tipificada. La ventaja principal del tipificación estática es bien conocida:</p>
+<blockquote>
+<p>Todos los errores de tipificado son detectados durante la compilación.</p>
+</blockquote>
+
+        </div>
+
+        <footer>
+            <div>
+                <p>Iconos por <a href="https://www.flaticon.es/autores/becris" title="Becris">Becris</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a></p>
+            </div>
+            <div>
+                <a href="https://github.com/alextorrer/haskell-ssg"><img src="../assets/img/github.png" alt=""></a>
+            </div>
+        </footer>
+    </body>
+
+    </html>

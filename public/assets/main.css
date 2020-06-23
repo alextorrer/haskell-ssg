@@ -108,19 +108,24 @@ footer img{
 .content pre {
   display: flex;
   justify-content: center;
-  background-color: #161616;
-  width: 50%;
-  margin: auto;
+  margin: 0 auto;
   max-width: 90%;
 }
 
 .content pre code{
   background-color: inherit;
-  padding: 10px;
+  padding: 20px;
   font-family: 'Source Code Pro', monospace;
   font-size: smaller;
   color: white;
   font-weight: 500;
+  background-color: #161616;
+  border: 1px solid;
+}
+
+.content img{
+  width: 80vw;
+  max-width: 600px;
 }
 
 .content blockquote{
@@ -147,6 +152,10 @@ footer img{
   }
   
   footer{
+    font-size: 10px;
+  }
+
+  .content pre code{
     font-size: 10px;
   }
 }

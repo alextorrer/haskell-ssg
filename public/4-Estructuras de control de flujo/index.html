@@ -1,0 +1,67 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="En los lenguajes de programación, las estructuras de control permiten modificar el flujo de ejecución de las instrucciones de un programa. Se puede ejecutar un grupo u otro de sentencias de acuerdo a una condición (if-then-else). Ejecutar un grupo u otro de sentencias de acuerdo al valor de una variable (switch-case)." />
+        <link href="../assets/main.css" rel="stylesheet" type="text/css"/>
+        <title>Estructuras de control de flujo</title>
+    </head>
+    <body>
+        <header>
+            <a href="/"><img class="arrow-icon" src="../assets/img/arrow-back.png" alt="arrow icon"></a>
+        </header>
+        <div class="content">
+            <h1>Estructuras de control de flujo</h1>
+            <hr />
+            <p>En <em>Haskell</em> contamos con dos formas de estructura condicional y no contamos con ninguna estructura de repetición, sin embargo, contamos con una alternativa.</p>
+<h2 id="condicional">Condicional</h2>
+<p>La primera forma de estructura condicional es por búsqueda de <em>patrones</em> en los argumentos de la función:</p>
+<pre><code class="language-haskell">  undostres :: Int -&gt; String
+  undostres 1 = &quot;uno&quot;
+  undostres 2 = &quot;dos&quot;
+  undostres 3 = &quot;tres&quot;
+  undostres x = &quot;otro&quot;
+
+  main = do
+      print(undostres 2)
+
+  &gt;&gt;dos</code></pre>
+<p>Esto funciona igual que un &quot;case&quot; o &quot;switch&quot;en otros lenguajes. Los patroness son los números que aparecen como argumentos <strong>1, 2, 3, x</strong>. El argumento de la función se compara por igualdad <strong>=</strong> con cada uno de los &quot;patrones&quot;. Si el argumento es igual a algún patrón, ejecuta y retorna lo que aparece en esa línea después del <strong>=</strong>. Si no es igual a ningún patrón determinado (<strong>1, 2, 3</strong>) ejecuta y retorna lo que aparece con patrón <strong>x</strong>.</p>
+<p>La segunda forma de estructura condicional se basa en utilizar &quot;guardas&quot;, representadas por el símbolo <strong>|</strong>:</p>
+<pre><code class="language-haskell">  positivoNegativo :: Int -&gt; String 
+  positivoNegativo :: a
+            | a &gt; 0    = &quot;positivo&quot;
+            | a &lt; 0    = &quot;negativo&quot;
+            | otherwise = &quot;neutro&quot;
+
+  main = do  
+     print( positivoNegativo 2 )
+
+  &gt;&gt;positivo</code></pre>
+<p>En las líneas 3 y 4 podemos ver cómo se definen 2 resultados para la función <strong>positivoNegativo</strong> basándose en condiciones. Los resultados son aquellos que están después del símbolo <strong>=</strong>. Las condiciones se encuentran previamente en cada línea, entre el símbolo <strong>|</strong> y el <strong>=</strong>. La palabra clave <strong>otherwise</strong> sirve para marcar lo que la función debe devolver en caso de que no se cumpla ninguna de las otras condiciones de las guardas previas.</p>
+<h2 id="repetición">Repetición</h2>
+<p>Como mencionamos al principio de esta sección, no contamos con estructuras de control, pero contamos con una alternativa más naturalmente cercana al lenguaje funcional: <em>la recursión</em>:</p>
+<pre><code class="language-haskell">  acumular :: [Int] -&gt; Int
+  acumular [] = 0
+  acumular (x:xs) = x + acumular
+
+  main = do
+     print( acumular [5,6,7] )</code></pre>
+<p>En la línea 2 se define el caso base: cuando se presenta una lista vacía, retorna <strong>0</strong>.</p>
+<p>En la línea 3 se puede ver la llamada recursiva. Esta línea se ejecuta solamente cuando el parámetro es distinto a una lista vacía, o sea, cuando el parámetro contiene una lista con al menos un elemento. El formato <strong>(x:xs)</strong> siginifica que en la variable <strong>x</strong> se guarde la cabeza de la lista que está siendo pasada como argumento, y en la variable <strong>xs</strong> el resto de la lista (la cola). Esto quiere decir que para la primer llamada a la función <strong>acumular</strong> con <strong>[5,6,7]</strong>, <strong>x</strong> vale <strong>5</strong> (un <strong>Int</strong>) y <strong>xs</strong> vale <strong>[6,7]</strong> (una lista). Entonces se ejecuta <strong>x + acumular xs</strong> con esos valores, siendo así <strong>5 + acumular [6,7]</strong>. Se llamará a recursión hasta que <strong>xs</strong> sea igual a una lista vacía <strong>[]</strong> con lo que se llega al caso base.</p>
+
+        </div>
+
+        <footer>
+            <div>
+                <p>Iconos por <a href="https://www.flaticon.es/autores/becris" title="Becris">Becris</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a></p>
+            </div>
+            <div>
+                <a href="https://github.com/alextorrer/haskell-ssg"><img src="../assets/img/github.png" alt=""></a>
+            </div>
+        </footer>
+    </body>
+
+    </html>

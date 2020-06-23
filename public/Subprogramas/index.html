@@ -1,0 +1,43 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Se le llama subrutina a un segmento de código separado del bloque principal, el cual puede ser invocado en cualquier momento desde ésta u otra subrutina. Generalmente son especificadas por un nombre único, un tipo de dato de retorno, una lista de parámetros y el código de procesamiento." />
+        <link href="../assets/main.css" rel="stylesheet" type="text/css"/>
+        <title>Subprogramas</title>
+    </head>
+    <body>
+        <header>
+            <a href="/"><img class="arrow-icon" src="../assets/img/arrow-back.png" alt="arrow icon"></a>
+        </header>
+        <div class="content">
+            <h1>Subprogramas</h1>
+            <hr />
+            <p> En la programación de computadoras, un <strong>subprograma</strong> o subrutina es una secuencia de instrucciones de programa que realiza una tarea específica empaquetado como una unidad. Esta unidad se puede utilizar en los programas siempre que sea esa particular tarea realizada.</p>
+<p>Los <strong>subprogramas</strong> se comportan de la misma manera que un programa de ordenador que se utiliza como un paso en un programa más amplio u otro subprograma. Una <em>subrutina</em> es a menudo codificado de manera que se puede iniciar varias veces y en varios lugares durante una ejecución del programa, que incluye desde otros subprogramas, y luego rama de vuelta a la siguiente instrucción después de la llamada, una vez que la tarea de la subrutina se realiza. Si bien la idea de una subrutina fue inicialmente concebido por <strong><em>John Mauchly</em></strong> durante su trabajo en ENIAC , <strong><em>Maurice Wilkes , David Wheeler , y Stanley Gill</em></strong> generalmente se le atribuye la invención formal de este concepto, que ellos llamaron una <em>subrutina cerrada</em>, en contraste con una <em>subrutina abierta</em> o macro.</p>
+<p>Las <strong>subrutinas</strong> son una potente programación de la herramienta, y la sintaxis de muchos lenguajes de programación incluye soporte para la escritura y el uso de ellos. El uso juicioso de subrutinas (por ejemplo, a través de la programación estructurada enfoque) a menudo reduce sustancialmente el coste de desarrollo y mantenimiento de un programa grande, al tiempo que aumenta su calidad y fiabilidad.</p>
+<p>El contenido de una <strong>subrutina</strong> es su cuerpo, que es la pieza de código de programa que se ejecuta cuando el <strong>subprograma</strong> se llama o invoca.</p>
+<p>La <strong>subrutina</strong> puede devolver un valor calculado a su llamador o valor de retorno, o proporcionar valores de resultado o parámetros de salida diferentes. De hecho, un uso común de subrutinas es implementar <em>funciones matemáticas</em>, en las que el propósito de la subrutina es puramente para <em>calcular uno o más resultados</em> cuyos valores están determinados en su totalidad por los argumentos pasados a la subrutina.</p>
+<p> En estricta programación funcional lenguajes como <strong>Haskell</strong>, subprogramas no pueden tener efectos secundarios, lo que significa que varios estados internos del programa no va a cambiar. Las funciones siempre devolverán el mismo resultado si se llama repetidamente con los mismos argumentos. Tales lenguajes normalmente solo admiten funciones, ya que las subrutinas que no devuelven un valor no tienen ningún uso a menos que puedan causar un efecto secundario.</p>
+<h2 id="sintaxis">Sintaxis</h2>
+<p>Consideremos la siguiente definición de función que suma sus dos argumentos como ejemplo de la sintaxis:</p>
+<pre><code class="language-haskell">    add :: Integer -&gt; Integer -&gt; Integer
+    add x y = x + y</code></pre>
+<p>Primero se establecen el tipo de datos que devolverá y los que se le pasarán como parmetros. Después se estable la acción a relizar con ellos.
+A este tipo de ejemplo se le llama función parcializada (curried). (El origen del nombre curry proviene de la persona que popularizó el uso de la parcialización: Haskell Curry).</p>
+
+        </div>
+
+        <footer>
+            <div>
+                <p>Iconos por <a href="https://www.flaticon.es/autores/becris" title="Becris">Becris</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a></p>
+            </div>
+            <div>
+                <a href="https://github.com/alextorrer/haskell-ssg"><img src="../assets/img/github.png" alt=""></a>
+            </div>
+        </footer>
+    </body>
+
+    </html>
