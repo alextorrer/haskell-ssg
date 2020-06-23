@@ -11,7 +11,7 @@
 * **highlight.js** for syntax highlighting in code.
 
 
-`npm install front-matter marked highlight.js`
+[Site](https://haskell-ss.netlify.app/)
 
 
 >SSG developed from [kartikn.me](https://kartikn.me/writing/node-ssg)
