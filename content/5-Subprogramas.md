@@ -1,4 +1,7 @@
- # Subprogramas
+---
+title: Subprogramas
+description: Se le llama subrutina a un segmento de código separado del bloque principal, el cual puede ser invocado en cualquier momento desde ésta u otra subrutina. Generalmente son especificadas por un nombre único, un tipo de dato de retorno, una lista de parámetros y el código de procesamiento.
+---
 
  En la programación de computadoras, un **subprograma** o subrutina es una secuencia de instrucciones de programa que realiza una tarea específica empaquetado como una unidad. Esta unidad se puede utilizar en los programas siempre que sea esa particular tarea realizada.
 
@@ -16,8 +19,10 @@ La **subrutina** puede devolver un valor calculado a su llamador o valor de reto
 
 Consideremos la siguiente definición de función que suma sus dos argumentos como ejemplo de la sintaxis:
 
- ``add           :: Integer -> Integer -> Integer``
- ``add x y       = x + y
+```haskell
+    add :: Integer -> Integer -> Integer
+    add x y = x + y
+ ```
 
 Primero se establecen el tipo de datos que devolverá y los que se le pasarán como parmetros. Después se estable la acción a relizar con ellos.
 A este tipo de ejemplo se le llama función parcializada (curried). (El origen del nombre curry proviene de la persona que popularizó el uso de la parcialización: Haskell Curry).
