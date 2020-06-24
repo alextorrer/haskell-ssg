@@ -29,13 +29,13 @@ Los siguientes identificadores son palabras reservadas y **no pueden utilizarse*
 - primitive class instance
 
 ### Tipos de datos básicos
-Bool (Valores lógicos), Sus valores son *True y False*.
-Char (Caracteres), *ejemplos: 'a', 'B', '3', '+'*.
-String (Cadena de caracteres), *ejemplos: "abc", "1 + 2 = 3"*.
-Int (Enteros de precisión fija), *ejemplos: 123, -12*.
-Integer (Enteros de precisión arbitraria), *ejemplos: 1267650600228229401496703205376*.
-Float (Reales de precisión arbitraria), *ejemplos: 1.2, -23.45, 45e-7*.
-Double (Reales de precisión doble), *ejemplos: 1.2, -23.45, 45e-7*.
+- Bool (Valores lógicos), Sus valores son *True y False*.
+- Char (Caracteres), *ejemplos: 'a', 'B', '3', '+'*.
+- String (Cadena de caracteres), *ejemplos: "abc", "1 + 2 = 3"*.
+- Int (Enteros de precisión fija), *ejemplos: 123, -12*.
+- Integer (Enteros de precisión arbitraria), *ejemplos: 1267650600228229401496703205376*.
+- Float (Reales de precisión arbitraria), *ejemplos: 1.2, -23.45, 45e-7*.
+- Double (Reales de precisión doble), *ejemplos: 1.2, -23.45, 45e-7*.
 
 #### Forma de relacionar un tipo de dato a una variable
 En cierto sentido, los tipos describen valores, y la asociación de un valor con su tipo se llama un tipificado (typing). Usando los ejemplos anteriores, podemos escribir "tipificaciones" como los siguientes:

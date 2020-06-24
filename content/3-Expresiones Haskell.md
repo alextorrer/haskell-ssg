@@ -35,9 +35,12 @@ A la hora de definir un operador podemos indicar su:
 - Para declarar el tipo de un operador hay que escribir el identificador entre paréntesis.
 - En la parte izquierda de la definición del cuerpo del operador se puede usar notación infija (el operador aparece entre sus dos argumentos).
 
-**infix** prioridad *identificador operador* (define un operador no asociativo).
-**infixl** prioridad *identificador operador* (define un operador asociativo a la izquierda).
-**infixr** prioridad *identificador operador* (define un operador asociativo a la derecha).
+ **infix** prioridad *identificador operador* (define un operador no asociativo).
+
+ **infixl** prioridad *identificador operador* (define un operador asociativo a la izquierda).
+
+ **infixr** prioridad *identificador operador* (define un operador asociativo a la derecha).
+
 
 Ejemplo:
 
