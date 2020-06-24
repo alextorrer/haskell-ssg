@@ -30,7 +30,7 @@ header{
 }
 
 header img{
-  margin: 3em;
+  margin: 2em;
 }
 
 footer{
@@ -52,7 +52,8 @@ footer img{
 }
 
 .home-main-container{
-  margin: 0 4vw;
+  margin: 0 auto;
+  max-width: 700px;
 }
 
 .logo-main-container{
@@ -65,7 +66,7 @@ footer img{
 }
 
 .logo-main-container div img{
-  width: 15vw;
+  width: 13vw;
   max-width: 250px;
   min-width: 150px;
   padding: 10px;
@@ -74,15 +75,16 @@ footer img{
 
 .logo-main-container h1{
   font-family: 'Raleway', sans-serif;
-  font-size: 130px;
+  font-size: 100px;
   margin: 0 0 5vw 0;
   font-weight: 900;
 }
 
 .posts-main-container{
-  width: 70vw;
+  width: 100%;
   margin: 0 auto;
-  font-size: 1.5em;
+  font-size: 1.2em;
+  padding: 10px;
 }
 
 .post-container{
@@ -100,7 +102,7 @@ footer img{
 }
 
 .content{
-  width: 70vw;
+  width: 60vw;
   margin: 0 auto;
   font-size: large;
 }
@@ -109,11 +111,11 @@ footer img{
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  max-width: 90%;
+  width: 100%;
+  overflow: auto;
 }
 
 .content pre code{
-  background-color: inherit;
   padding: 20px;
   font-family: 'Source Code Pro', monospace;
   font-size: smaller;
@@ -121,6 +123,7 @@ footer img{
   font-weight: 500;
   background-color: #161616;
   border: 1px solid;
+  overflow: auto;
 }
 
 .content img{
@@ -135,16 +138,16 @@ footer img{
 
 @media only screen and (max-width: 800px){
   .logo-main-container h1{
-    font-size: 100px;
+    font-size: 80px;
   }
   .posts-main-container{
     font-size: 1em;
   }
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 600px){
   .logo-main-container h1{
-    font-size: 80px;
+    font-size: 60px;
   }
 
   footer img{
@@ -155,8 +158,9 @@ footer img{
     font-size: 10px;
   }
 
-  .content pre code{
-    font-size: 10px;
+  .content {
+    width: 80vw;
+    font-size: smaller;
   }
 }
 
