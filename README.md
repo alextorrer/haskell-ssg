@@ -1,9 +1,8 @@
-# [Haskell Static blog](https://haskell-ss.netlify.app/)
+# [Haskell Site](https://haskell-ss.netlify.app/)
 
-## This is a Haskell's language description static site
-
-### Developed with a Static Site Generator made from scratch with Node.js
-
+### Developed in Node.js
+This is a project where we describe some core concepts about Haskell.
+Made from scratch with a static site generator developed in node.js which consists in convert Markdown files into HTML files.
 
 ### Node modules
 * **front-matter** for extracting the yaml from a post.
