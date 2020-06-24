@@ -1,4 +1,4 @@
-# Haskell Static blog
+# [Haskell Static blog](https://haskell-ss.netlify.app/)
 
 ## This is a Haskell's language description static site
 
@@ -9,9 +9,6 @@
 * **front-matter** for extracting the yaml from a post.
 * **marked** for converting markdown to html.
 * **highlight.js** for syntax highlighting in code.
-
-
-[Site](https://haskell-ss.netlify.app/)
 
 
 >SSG developed from [kartikn.me](https://kartikn.me/writing/node-ssg)
